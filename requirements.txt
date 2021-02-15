@@ -1,1 +1,6 @@
+importlib-metadata==3.4.0
+Markdown==3.3.3
+MarkupSafe==1.1.1
 pkg-resources==0.0.0
+typing-extensions==3.7.4.3
+zipp==3.4.0
