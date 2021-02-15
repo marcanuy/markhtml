@@ -8,7 +8,7 @@ formed of two columns:
   - An auto generated Table of Contents based in the markdown headings
 - Markdown content (right-column)
 
-![example](https://raw.githubusercontent.com/marcanuy/markhtml/branch/example.png)
+![example](https://raw.githubusercontent.com/marcanuy/markhtml/main/example.png)
 
 
 # Install
