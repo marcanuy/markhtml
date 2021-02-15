@@ -31,6 +31,14 @@ source ~/.virtualenvs/markhtml/bin/activate
 pip install -r requirements.txt
 ~~~
 
+# Usage
+
+~~~
+./src/convert.py input.md
+~~~
+
+Generates `output.html`
+
 # Notes
 
 Uses
