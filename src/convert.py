@@ -2,7 +2,7 @@
 import argparse
 import markdown
 from string import Template
-
+from pathlib import Path
 
 def initialize_parser():
     md = markdown.Markdown(extensions=["toc"])
@@ -19,7 +19,7 @@ def read_filename():
 
 
 def open_file(filename):
-    with open("input.md", "r", encoding="utf-8") as input_file:
+    with open(filename, "r", encoding="utf-8") as input_file:
         text = input_file.read()
         return text
 
@@ -32,11 +32,13 @@ def render(html, toc):
         return result
 
 
-def save(text):
+def save(text, filename):
+    out_filename = Path(filename).with_suffix('.html')
     with open(
-        "output.html", "w", encoding="utf-8", errors="xmlcharrefreplace"
+        out_filename, "w", encoding="utf-8", errors="xmlcharrefreplace"
     ) as output_file:
         output_file.write(text)
+        print("Generated file: {}".format(out_filename))
 
 
 def main():
@@ -46,7 +48,7 @@ def main():
     html = md.convert(text)
     toc = md.toc
     page = render(html, toc)
-    save(page)
+    save(page, filename)
 
 
 if __name__ == "__main__":
