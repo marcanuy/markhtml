@@ -35,7 +35,7 @@ pip install -r requirements.txt
 
 To convert
 [example.md](https://raw.githubusercontent.com/marcanuy/markhtml/main/examples/example.md)
-using `src/convert.py path-to-markdown-file.md` generates [example.html](https://raw.githubusercontent.com/marcanuy/markhtml/main/examples/example.html)
+using `src/convert.py path-to-markdown-file.md` generates [example.html](https://github.com/marcanuy/markhtml/blob/main/examples/example.html)
 
 ~~~
 src/convert.py examples/example.md
