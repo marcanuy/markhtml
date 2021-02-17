@@ -1,12 +1,13 @@
-[![CircleCI](https://circleci.com/gh/AumitLeon/markdown_html_converter.svg?style=svg)](https://circleci.com/gh/AumitLeon/markdown_html_converter) [![PyPI version](https://badge.fury.io/py/markhtml.svg)](https://badge.fury.io/py/markhtml)
-[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
-[![PyPI license](https://img.shields.io/pypi/l/ansicolortags.svg)](https://pypi.python.org/pypi/ansicolortags/)
-[![Documentation Status](https://readthedocs.org/projects/markdown-html-converter/badge/?version=latest)](https://markhtml.readthedocs.io/en/latest/?badge=latest)
-[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
-[![Downloads](https://pepy.tech/badge/markhtml)](https://pepy.tech/project/markhtml)
-
 Markdown to HTML
 ====================
+
+[![CircleCI](https://circleci.com/gh/AumitLeon/markdown_html_converter.svg?style=svg)](https://circleci.com/gh/AumitLeon/markdown_html_converter)
+[![PyPI
+version](https://badge.fury.io/py/markhtml.svg)](https://badge.fury.io/py/markhtml)
+[![Pypi](https://img.shields.io/pypi/v/nine.svg)](https://pypi.python.org/pypi/markhtml/)
+[![PyPI license](https://img.shields.io/pypi/l/ansicolortags.svg)](https://pypi.python.org/pypi/ansicolortags/)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![Downloads](https://pepy.tech/badge/markhtml)](https://pepy.tech/project/markhtml)
 
 Markdown to HTML converter. Converts a Markdown file into an HTML file
 formed of two columns:
