@@ -1,8 +1,15 @@
 #!/usr/bin/env python
 import argparse
 import markdown
+import os
 from string import Template
 from pathlib import Path
+
+# Set up paths
+# Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+SRC_DIR = os.path.join(BASE_DIR, 'src')
+TEMPLATE_FILE = os.path.join(SRC_DIR, 'template.html')
 
 def initialize_parser():
     md = markdown.Markdown(extensions=["toc"])
@@ -26,7 +33,7 @@ def open_file(filename):
 
 def render(html, toc):
     context = {"content": html, "toc": toc}
-    with open("src/template.html", "r") as f:
+    with open(TEMPLATE_FILE, "r") as f:
         src = Template(f.read())
         result = src.substitute(context)
         return result
